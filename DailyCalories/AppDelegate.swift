@@ -34,3 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension CoreDataManager{
+    static var shared = CoreDataManager()
+}
+

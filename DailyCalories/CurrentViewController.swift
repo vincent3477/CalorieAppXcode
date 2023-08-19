@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 import UIKit
 
 class CurrentViewController: UIViewController, CalcCaloriesDelegate{
@@ -13,19 +14,46 @@ class CurrentViewController: UIViewController, CalcCaloriesDelegate{
     
     @IBOutlet var calorieCounter: UILabel!
     
+    var calorieCounterCurr = UserDefaults.standard.integer(forKey: "Calorie_Value")
+    var previousDateLoggedIn = UserDefaults.standard.integer(forKey: "Prev_Date")
     
-    var calorieCounterInt = 0
+    
+    
+    
+    //var calorieCounterInt = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyyMMdd"
+        
+        let currentDate = Date()
+        
+        let this_date = Int(dateFormatter.string(from: currentDate))
+        
+        if(previousDateLoggedIn != this_date){
+            UserDefaults.standard.set(0,forKey: "Calorie_Value")
+            print("Different day. Reset calorie counter.")
+        }
+        
+        UserDefaults.standard.set(this_date,forKey: "Prev_Date")
+        
+        
+        calorieCounter.text = String(calorieCounterCurr)
     }
     
     
     func updateCalories(addValue: Int) {
+        let newValue = calorieCounterCurr + addValue
         
-        calorieCounterInt += addValue
+        UserDefaults.standard.set(newValue,forKey: "Calorie_Value")
         
-        calorieCounter.text = String(calorieCounterInt)
+        calorieCounterCurr = newValue
+        
+        calorieCounter.text = String(calorieCounterCurr)
+                
+        
         
     }
     

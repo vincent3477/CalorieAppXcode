@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "48B7F305-5748-4961-B4C4-03BB2E3B6110"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "166B73B3-29B3-4B7F-A9FA-2B7FD7375945"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyCalories/CurrentViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "166B73B3-29B3-4B7F-A9FA-2B7FD7375945 - 36b3ebcc1bbf4982"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyCalories.CurrentViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "DailyCalories"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincentsiu/Documents/personal_repo/CalorieAppXcode/DailyCalories/CurrentViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "456">
+               </Location>
+               <Location
+                  uuid = "166B73B3-29B3-4B7F-A9FA-2B7FD7375945 - 36b3ebcc1bbf4982"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyCalories.CurrentViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "DailyCalories"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vincentsiu/Documents/personal_repo/CalorieAppXcode/DailyCalories/CurrentViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39209832-D3C9-4833-8D62-989D7F6292A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyCalories/CurrentViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
