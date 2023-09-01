@@ -59,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEI-SX-ahV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1493.8931297709923" y="-1202.1126760563382"/>
+            <point key="canvasLocation" x="1482" y="-1597"/>
         </scene>
         <!--Select Meal Table View Controller-->
         <scene sceneID="IWV-8W-sBf">
@@ -94,7 +94,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXb-Py-h6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2433" y="-1202"/>
+            <point key="canvasLocation" x="2440" y="-1597"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CJO-Nb-6VV">
@@ -107,7 +107,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vTR-WM-geM" kind="relationship" relationship="viewControllers" id="mUZ-vA-keB"/>
-                        <segue destination="Rq9-tE-MWW" kind="relationship" relationship="viewControllers" id="vMq-Mq-HIZ"/>
+                        <segue destination="T0u-Hu-xwE" kind="relationship" relationship="viewControllers" id="86r-sC-yve"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yl7-bg-MAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -134,20 +134,50 @@
             <point key="canvasLocation" x="569" y="-1597"/>
         </scene>
         <!--History-->
-        <scene sceneID="Rej-YB-zY4">
+        <scene sceneID="fAR-nF-0FR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rq9-tE-MWW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" image="calendar" catalog="system" id="ai9-7o-aUb"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pbq-Z4-MrJ">
+                <navigationController id="T0u-Hu-xwE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="calendar" catalog="system" id="oEJ-N7-BnK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ltT-g7-lHw">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hqa-Za-GXx" kind="relationship" relationship="rootViewController" id="KaV-K9-jKC"/>
+                    </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f8A-Bl-953" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEU-Xm-9pJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="569" y="-873"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="e2h-Px-fTP">
+            <objects>
+                <tableViewController id="hqa-Za-GXx" customClass="HistoryViewController" customModule="DailyCalories" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="yvb-DY-fqL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="date_cell" id="3wa-H1-Rrg">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3wa-H1-Rrg" id="ZyR-9O-GFg">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hqa-Za-GXx" id="RZR-js-ayz"/>
+                            <outlet property="delegate" destination="hqa-Za-GXx" id="ZYI-vb-oKC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="zSL-po-OfC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFm-vt-G8h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1482" y="-873"/>
         </scene>
     </scenes>
     <resources>

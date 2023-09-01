@@ -9,6 +9,10 @@ import Foundation
 import SwiftUI
 import UIKit
 
+protocol calorieLogDelegate{
+    func addCalorieLog(new_date: Int, total_cal: Int)
+}
+
 class CurrentViewController: UIViewController, CalcCaloriesDelegate{
     /* CalcCaloriesDelegate, the name of the protocol is on top because THE CURRENT VIEW CONTROLLER MUST CONFORM TO THE PROTOCOL, MEANING THAT IT DEFINES WHAT FUNCTION OR VARIABLES THEY ARE WITHIN THE PROTOCOL */
     
@@ -28,11 +32,20 @@ class CurrentViewController: UIViewController, CalcCaloriesDelegate{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
         
+        
+        
         let currentDate = Date()
         
         let this_date = Int(dateFormatter.string(from: currentDate))
         
         if(previousDateLoggedIn != this_date){
+            
+            //add calorie log
+            var delegate: calorieLogDelegate?
+            
+            delegate?.addCalorieLog(new_date: previousDateLoggedIn, total_cal: calorieCounterCurr)
+            
+            
             UserDefaults.standard.set(0,forKey: "Calorie_Value")
             print("Different day. Reset calorie counter.")
         }
