@@ -24,20 +24,25 @@ class HistoryViewController: UITableViewController, calorieLogDelegate{
     func fetch_log(){
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        //to give you access to managed object context.
 
+        
+        //In order to get the data we want from core data, we have to initiate a NSFetchRequest that is responsible for asking for fetch data from the core data. We also have to the ask for the type of data we want to fetch.
         let fetchRequest: NSFetchRequest <PastCalories> = PastCalories.fetchRequest()
         do{
             let results = try context.fetch(fetchRequest)
-            print("tryint to fetch data")
+            print("Fetching history from core data.")
             for logs in results{
                 
-                
-                log.append("Calories: \(logs.calories)   Date: \(logs.date)")
+                if(logs.calories != 0){
+                    log.append("Calories: \(logs.calories)   Date: \(logs.date)")
+                }
                 
             }
         } catch{
             print("Error fetching data \(error)")
         }
+
         print(log)
     }
     

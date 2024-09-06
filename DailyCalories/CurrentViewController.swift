@@ -13,13 +13,40 @@ protocol calorieLogDelegate{
     func addCalorieLog(new_date: Int, total_cal: Int)
 }
 
+
 class CurrentViewController: UIViewController, CalcCaloriesDelegate{
     /* CalcCaloriesDelegate, the name of the protocol is on top because THE CURRENT VIEW CONTROLLER MUST CONFORM TO THE PROTOCOL, MEANING THAT IT DEFINES WHAT FUNCTION OR VARIABLES THEY ARE WITHIN THE PROTOCOL */
     
-    @IBOutlet var calorieCounter: UILabel!
-    
     var calorieCounterCurr = UserDefaults.standard.integer(forKey: "Calorie_Value")
     var previousDateLoggedIn = UserDefaults.standard.integer(forKey: "Prev_Date")
+    
+    
+    
+    
+    
+    
+    @IBOutlet var calorieCounter: UILabel!
+    
+    
+    
+    @IBAction func ResetButton(_ sender: Any) {
+        let popup = UIAlertController(title: "Are you sure you want to reset your calorie counter?", message: "Doing so will reset your day progress!", preferredStyle: .alert)
+        
+        let yesOption = UIAlertAction(title: "Yes", style: .destructive){_ in
+            
+            //reset all calories to zero.
+            UserDefaults.standard.set(0,forKey: "Calorie_Value")
+            self.calorieCounter.text = String(0)
+        }
+        
+        let cancelOption = UIAlertAction(title: "No", style: .default)
+        
+        popup.addAction(yesOption)
+        popup.addAction(cancelOption)
+        present(popup,animated: true,completion: nil)
+    }
+    
+    
     
     
     
@@ -57,7 +84,8 @@ class CurrentViewController: UIViewController, CalcCaloriesDelegate{
     }
     
     
-    func updateCalories(addValue: Int) {
+    func updateCalories(addValue: Int, addFoods: [String]) {
+        
         let newValue = calorieCounterCurr + addValue
         
         UserDefaults.standard.set(newValue,forKey: "Calorie_Value")
@@ -66,8 +94,15 @@ class CurrentViewController: UIViewController, CalcCaloriesDelegate{
         
         calorieCounter.text = String(calorieCounterCurr)
                 
+        print("the foods to be added to our table are ")
+        print(addFoods)
         
         
+    }
+    
+    func updateLogTable(addFoods: [String]){
+        print("print addFoods")
+        print(addFoods)
     }
     
     
@@ -76,6 +111,8 @@ class CurrentViewController: UIViewController, CalcCaloriesDelegate{
             selectMealTableViewController.delegate = self
         }
     }
+    
+    
  
 }
 

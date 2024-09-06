@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5293EF82C8A734900889EF9 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5293EF72C8A734900889EF9 /* AddMealViewController.swift */; };
 		A55A9AF32A790B92001DD5EE /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9AF22A790B92001DD5EE /* CurrentViewController.swift */; };
 		A55A9AF52A7C6D12001DD5EE /* SelectMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9AF42A7C6D12001DD5EE /* SelectMealTableViewController.swift */; };
 		A55A9AF72A7CE016001DD5EE /* FoodList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A55A9AF62A7CE016001DD5EE /* FoodList.plist */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5293EF72C8A734900889EF9 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
 		A55A9AF22A790B92001DD5EE /* CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		A55A9AF42A7C6D12001DD5EE /* SelectMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMealTableViewController.swift; sourceTree = "<group>"; };
 		A55A9AF62A7CE016001DD5EE /* FoodList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FoodList.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				A59FD4F32A9D619400B226B7 /* DateItem.swift */,
 				A587BFF02AA1680E0004BE2C /* PrevCalories.xcdatamodeld */,
 				A587BFF32AA16BC60004BE2C /* PrevCalories.swift */,
+				A5293EF72C8A734900889EF9 /* AddMealViewController.swift */,
 			);
 			path = DailyCalories;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				A55A9AF32A790B92001DD5EE /* CurrentViewController.swift in Sources */,
 				A59FD4F02A9D5FEA00B226B7 /* HistoryViewController.swift in Sources */,
 				A59FD4F42A9D619400B226B7 /* DateItem.swift in Sources */,
+				A5293EF82C8A734900889EF9 /* AddMealViewController.swift in Sources */,
 				A5B892DB2A787065002A959E /* SceneDelegate.swift in Sources */,
 				A587BFF42AA16BC60004BE2C /* PrevCalories.swift in Sources */,
 			);
@@ -323,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YYCYG5835;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyCalories/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -350,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YYCYG5835;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyCalories/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
