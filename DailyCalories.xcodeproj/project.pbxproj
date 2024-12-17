@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5293EF82C8A734900889EF9 /* AddMealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5293EF72C8A734900889EF9 /* AddMealViewController.swift */; };
+		11A25676D6227243C2810AD3 /* Pods_DailyCalories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB20D7EAD09579DAC7E23FF /* Pods_DailyCalories.framework */; };
+		A514DDAD2D10ABA9008260B0 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A514DDAC2D10ABA9008260B0 /* CameraManager.swift */; };
+		A51A7DBC2C98FD6B00D4CA19 /* testlabels.txt in Resources */ = {isa = PBXBuildFile; fileRef = A51A7DBB2C98FD6B00D4CA19 /* testlabels.txt */; };
 		A55A9AF32A790B92001DD5EE /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9AF22A790B92001DD5EE /* CurrentViewController.swift */; };
 		A55A9AF52A7C6D12001DD5EE /* SelectMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9AF42A7C6D12001DD5EE /* SelectMealTableViewController.swift */; };
 		A55A9AF72A7CE016001DD5EE /* FoodList.plist in Resources */ = {isa = PBXBuildFile; fileRef = A55A9AF62A7CE016001DD5EE /* FoodList.plist */; };
 		A55A9AF92A7CE23E001DD5EE /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A9AF82A7CE23E001DD5EE /* Food.swift */; };
+		A57D552B2C8BECF3007063F7 /* AddMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D552A2C8BECF3007063F7 /* AddMeal.swift */; };
+		A57D552D2C8D9B7E007063F7 /* ViewResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57D552C2C8D9B7E007063F7 /* ViewResultController.swift */; };
+		A57D55352C8FD2D6007063F7 /* example_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = A57D55342C8FD2D5007063F7 /* example_model.tflite */; };
 		A587BFF22AA1680E0004BE2C /* PrevCalories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A587BFF02AA1680E0004BE2C /* PrevCalories.xcdatamodeld */; };
 		A587BFF42AA16BC60004BE2C /* PrevCalories.swift in Sources */ = {isa = PBXBuildFile; fileRef = A587BFF32AA16BC60004BE2C /* PrevCalories.swift */; };
 		A59FD4F02A9D5FEA00B226B7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FD4EF2A9D5FEA00B226B7 /* HistoryViewController.swift */; };
@@ -24,11 +29,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A5293EF72C8A734900889EF9 /* AddMealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealViewController.swift; sourceTree = "<group>"; };
+		05AF9A016FD4D24AA03D4A81 /* Pods-DailyCalories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCalories.release.xcconfig"; path = "Target Support Files/Pods-DailyCalories/Pods-DailyCalories.release.xcconfig"; sourceTree = "<group>"; };
+		3FED41EB7A6CE01DD61569F8 /* Pods-DailyCalories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyCalories.debug.xcconfig"; path = "Target Support Files/Pods-DailyCalories/Pods-DailyCalories.debug.xcconfig"; sourceTree = "<group>"; };
+		8CB20D7EAD09579DAC7E23FF /* Pods_DailyCalories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyCalories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A514DDAC2D10ABA9008260B0 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		A51A7DBB2C98FD6B00D4CA19 /* testlabels.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = testlabels.txt; path = DailyCalories/testlabels.txt; sourceTree = "<group>"; };
 		A55A9AF22A790B92001DD5EE /* CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		A55A9AF42A7C6D12001DD5EE /* SelectMealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMealTableViewController.swift; sourceTree = "<group>"; };
 		A55A9AF62A7CE016001DD5EE /* FoodList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FoodList.plist; sourceTree = "<group>"; };
 		A55A9AF82A7CE23E001DD5EE /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		A57D552A2C8BECF3007063F7 /* AddMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeal.swift; sourceTree = "<group>"; };
+		A57D552C2C8D9B7E007063F7 /* ViewResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewResultController.swift; sourceTree = "<group>"; };
+		A57D55342C8FD2D5007063F7 /* example_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; name = example_model.tflite; path = DailyCalories/example_model.tflite; sourceTree = "<group>"; };
 		A587BFF12AA1680E0004BE2C /* PrevCalories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrevCalories.xcdatamodel; sourceTree = "<group>"; };
 		A587BFF32AA16BC60004BE2C /* PrevCalories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrevCalories.swift; sourceTree = "<group>"; };
 		A59FD4EF2A9D5FEA00B226B7 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A25676D6227243C2810AD3 /* Pods_DailyCalories.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +69,13 @@
 		A5B892CC2A787065002A959E = {
 			isa = PBXGroup;
 			children = (
+				A51A7DBB2C98FD6B00D4CA19 /* testlabels.txt */,
+				A57D55342C8FD2D5007063F7 /* example_model.tflite */,
 				A55A9AF62A7CE016001DD5EE /* FoodList.plist */,
 				A5B892D72A787065002A959E /* DailyCalories */,
 				A5B892D62A787065002A959E /* Products */,
+				FA114606823522D81ED712B4 /* Pods */,
+				E911F3A289882ED5C0CF3625 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +104,9 @@
 				A59FD4F32A9D619400B226B7 /* DateItem.swift */,
 				A587BFF02AA1680E0004BE2C /* PrevCalories.xcdatamodeld */,
 				A587BFF32AA16BC60004BE2C /* PrevCalories.swift */,
-				A5293EF72C8A734900889EF9 /* AddMealViewController.swift */,
+				A57D552A2C8BECF3007063F7 /* AddMeal.swift */,
+				A57D552C2C8D9B7E007063F7 /* ViewResultController.swift */,
+				A514DDAC2D10ABA9008260B0 /* CameraManager.swift */,
 			);
 			path = DailyCalories;
 			sourceTree = "<group>";
@@ -99,6 +118,23 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		E911F3A289882ED5C0CF3625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CB20D7EAD09579DAC7E23FF /* Pods_DailyCalories.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA114606823522D81ED712B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FED41EB7A6CE01DD61569F8 /* Pods-DailyCalories.debug.xcconfig */,
+				05AF9A016FD4D24AA03D4A81 /* Pods-DailyCalories.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5B892E92A787066002A959E /* Build configuration list for PBXNativeTarget "DailyCalories" */;
 			buildPhases = (
+				9D256A01B981259A1A31BFA8 /* [CP] Check Pods Manifest.lock */,
 				A5B892D12A787065002A959E /* Sources */,
 				A5B892D22A787065002A959E /* Frameworks */,
 				A5B892D32A787065002A959E /* Resources */,
+				39773BD347204F83A0C89CFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +169,7 @@
 				TargetAttributes = {
 					A5B892D42A787065002A959E = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -157,6 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51A7DBC2C98FD6B00D4CA19 /* testlabels.txt in Resources */,
+				A57D55352C8FD2D6007063F7 /* example_model.tflite in Resources */,
 				A55A9AF72A7CE016001DD5EE /* FoodList.plist in Resources */,
 				A5B892E52A787066002A959E /* LaunchScreen.storyboard in Resources */,
 				A5B892E22A787066002A959E /* Assets.xcassets in Resources */,
@@ -165,6 +206,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39773BD347204F83A0C89CFD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyCalories/Pods-DailyCalories-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DailyCalories/Pods-DailyCalories-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DailyCalories/Pods-DailyCalories-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D256A01B981259A1A31BFA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DailyCalories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5B892D12A787065002A959E /* Sources */ = {
@@ -177,8 +260,10 @@
 				A55A9AF92A7CE23E001DD5EE /* Food.swift in Sources */,
 				A55A9AF32A790B92001DD5EE /* CurrentViewController.swift in Sources */,
 				A59FD4F02A9D5FEA00B226B7 /* HistoryViewController.swift in Sources */,
+				A514DDAD2D10ABA9008260B0 /* CameraManager.swift in Sources */,
+				A57D552D2C8D9B7E007063F7 /* ViewResultController.swift in Sources */,
+				A57D552B2C8BECF3007063F7 /* AddMeal.swift in Sources */,
 				A59FD4F42A9D619400B226B7 /* DateItem.swift in Sources */,
-				A5293EF82C8A734900889EF9 /* AddMealViewController.swift in Sources */,
 				A5B892DB2A787065002A959E /* SceneDelegate.swift in Sources */,
 				A587BFF42AA16BC60004BE2C /* PrevCalories.swift in Sources */,
 			);
@@ -256,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -322,19 +407,22 @@
 		};
 		A5B892EA2A787066002A959E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FED41EB7A6CE01DD61569F8 /* Pods-DailyCalories.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6YYCYG5835;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyCalories/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +431,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myname.DailyCalories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DailyCalories/DailyCalories-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -350,19 +440,22 @@
 		};
 		A5B892EB2A787066002A959E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AF9A016FD4D24AA03D4A81 /* Pods-DailyCalories.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6YYCYG5835;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyCalories/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = test;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.myname.DailyCalories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DailyCalories/DailyCalories-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

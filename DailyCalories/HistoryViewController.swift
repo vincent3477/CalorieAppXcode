@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 
-class HistoryViewController: UITableViewController, calorieLogDelegate{
+class HistoryViewController: UITableViewController{
     private var dates: [DateItem] = []
     
     
@@ -23,6 +23,9 @@ class HistoryViewController: UITableViewController, calorieLogDelegate{
     
     func fetch_log(){
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yy"
+        
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         //to give you access to managed object context.
 
@@ -33,10 +36,31 @@ class HistoryViewController: UITableViewController, calorieLogDelegate{
             let results = try context.fetch(fetchRequest)
             print("Fetching history from core data.")
             for logs in results{
+                /*print(logs.foodItem as Any)
                 
-                if(logs.calories != 0){
-                    log.append("Calories: \(logs.calories)   Date: \(logs.date)")
+                let foodItem = logs.foodItem ?? "Unknown Food Item"
+                let numCalories = String(logs.calories)
+                if let date = logs.date{
+                    log.append("\(String(describing: date)): \(String(describing: foodItem))\((numCalories))")
                 }
+                else{
+                    log.append("No Date: \(String(describing: logs.foodItem))\((numCalories))")
+                }
+                 */
+                //This results in the interpreter think many fo the values will be optional.
+                
+                
+                
+                if let foodItem = logs.value(forKey: "foodItem") as? String, let numCal = logs.value(forKey: "calories") as? Int32, let date = logs.value(forKey: "date") as? Date{
+                    
+                    //let dateFormat = dateFormatter.date(from: date)!
+                    var dateFormatted = dateFormatter.string(from: date)
+                    log.append("\(dateFormatted): \(foodItem) - \(numCal) Cals")
+                }else{
+                    print("Wrong format. Could not print to log.")
+                }
+                
+                
                 
             }
         } catch{
@@ -45,14 +69,11 @@ class HistoryViewController: UITableViewController, calorieLogDelegate{
 
         print(log)
     }
+
     
-    
-    
-    var default_dates = UserDefaults.standard.stringArray(forKey: "logged_calories")
-    
-    var previousDateLoggedIn = UserDefaults.standard.string(forKey: "Previous_date")
-    
-    func addCalorieLog(new_date: Int, total_cal: Int) {
+    /*func addCalorieLog(new_date: Int, total_cal: Int) {
+        
+        print("add cal log called")
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         //access an instance of the app delegate
         
@@ -70,6 +91,7 @@ class HistoryViewController: UITableViewController, calorieLogDelegate{
         }
         
     }
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,6 +100,7 @@ class HistoryViewController: UITableViewController, calorieLogDelegate{
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("history log count is \(log.count)")
         return log.count
     }
     
